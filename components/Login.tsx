@@ -1,11 +1,15 @@
 import React from 'react'
 import Image from 'next/image'
+import Head from 'next/head'
 import {useMetamask} from "@thirdweb-dev/react";
 function Login() {
   const connectWithMetamask=useMetamask();
   return (
     <div className='bg-[#091b18] min-h-screen flex flex-col items-center justify-center text-center'>
-        <div className='flex flex-col items-center mb-10'>
+       <Head>
+         <title>CRYPTO LOTTERY</title> 
+      </Head>  
+      <div className='flex flex-col items-center mb-10'>
         <Image className='rounded-full'
 height={200}
 width={200}
