@@ -134,7 +134,7 @@ src={"https://images-platform.99static.com//OIVGByEHdx-cioj4XK2I1UGbiyE=/737x736
             <Admin/>
           </div>
          )} */}
-     {/* {winnings>0 &&( */}
+      {winnings>0 &&( 
       <div className='max-w-md md:max-w-2xl lg:max-w-4xl mx-auto mt-5'>
         <button onClick={withdrawM} className='p-5 bg-gradient-to-b from-orange-500 to-emerald-600 animate-pulse text-center rounded-xl w-full'>
           <p className='font-bold'>CONGRATULATIONS YOU WON!!!</p>
@@ -143,7 +143,7 @@ src={"https://images-platform.99static.com//OIVGByEHdx-cioj4XK2I1UGbiyE=/737x736
         <p className='font-semibold'>Click here to withdraw</p>
         </button>
       </div>
-     {/* )} */}
+      )} 
 
      <div className='space-y-5 md:space-y-0 m-5 md:flex md:flex-row items-start justify-center md:space-x-5'>
       <div className='stats-container'>
