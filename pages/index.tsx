@@ -97,7 +97,7 @@ const handleClick=async()=>{
   }
 }
   const [quantity, setQuantity]=useState<number>(1);
-  if(!address) return <Login/>
+//  if(!address) return <Login/>
   if(isLoading) return (
     <div className='bg-[#091B18] h-screen flex flex-col items-center justify-center'>
       <div className='flex flex-col items-center space-x-2 mb-10'>
