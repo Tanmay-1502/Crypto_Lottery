@@ -14,9 +14,9 @@ import Admin from '../components/Admin'
 const Home: NextPage = () => {
   const address=useAddress();
   const [userTickets, setUserTickets]=useState(0);
-//   const {contract, isLoading}=useContract(
-//     process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
-//   );
+  const {contract, isLoading}=useContract(
+    process.env.NEXT_PUBLIC_LOTTERY_CONTRACT_ADDRESS
+  );
 const {data: remainingTickets}=useContractData(
   contract, "RemainingTickets"
 )
@@ -97,22 +97,22 @@ const handleClick=async()=>{
   }
 }
   const [quantity, setQuantity]=useState<number>(1);
- // if(!address) return <Login/>
-//   if(isLoading) return (
-//     <div className='bg-[#091B18] h-screen flex flex-col items-center justify-center'>
-//       <div className='flex flex-col items-center space-x-2 mb-10'>
-//       <Image className='rounded-full'
-// height={200}
-// width={200}
-// src={"https://images-platform.99static.com//OIVGByEHdx-cioj4XK2I1UGbiyE=/737x736:1473x1473/fit-in/500x500/99designs-contests-attachments/131/131508/attachment_131508449"}/>
+ if(!address) return <Login/>
+  if(isLoading) return (
+    <div className='bg-[#091B18] h-screen flex flex-col items-center justify-center'>
+      <div className='flex flex-col items-center space-x-2 mb-10'>
+      <Image className='rounded-full'
+height={200}
+width={200}
+src={"https://images-platform.99static.com//OIVGByEHdx-cioj4XK2I1UGbiyE=/737x736:1473x1473/fit-in/500x500/99designs-contests-attachments/131/131508/attachment_131508449"}/>
       
-//       <h1 className='text-white'>
-//         Loading the draw
-//       </h1>
-//       </div>
-//       <PropagateLoader color='white' size={30}/>
-//     </div>
-//   ) 
+      <h1 className='text-white'>
+        Loading the draw
+      </h1>
+      </div>
+      <PropagateLoader color='white' size={30}/>
+    </div>
+  ) 
   return (
    
 
